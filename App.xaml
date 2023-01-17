@@ -2,8 +2,50 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:winetranet_application"
+             xmlns:viewModel="clr-namespace:winetranet_application.ViewModel"
+             xmlns:view="clr-namespace:winetranet_application.View"
              StartupUri="MainWindow.xaml">
+    
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/MenuButtonTheme.xaml" />
+                <ResourceDictionary Source="Themes/TextBoxTheme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            
+            <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+                <view:HomeView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:UserViewModel}">
+                <view:UserView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:CreateUserViewModel}">
+                <view:CreateUserView/>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:SiteViewModel}">
+                <view:SiteView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:CreateSiteViewModel}">
+                <view:CreateSiteView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:ServiceViewModel}">
+                <view:ServiceView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:CreateServiceViewModel}">
+                <view:CreateServiceView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:AdminLoginViewModel}">
+                <view:AdminLoginView/>
+            </DataTemplate>
+            
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
+

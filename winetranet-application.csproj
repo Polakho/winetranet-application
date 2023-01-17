@@ -8,4 +8,26 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\alternate_email_FILL0_wght500_GRAD-25_opsz24.png" />
+    <None Remove="Images\winetranet-high-resolution-logo-black-on-transparent-background.png" />
+    <None Remove="Images\winetranet-high-resolution-logo-black-on-white-background.png" />
+    <None Remove="Images\winetranet-low-resolution-logo-white-on-transparent-background.png" />
+    <None Remove="Images\winetranet-website-favicon-color.png" />
+    <None Remove="Images\winetranet-website-favicon-white.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.31" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="5.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\alternate_email_FILL0_wght500_GRAD-25_opsz24.png" />
+    <Resource Include="Images\winetranet-high-resolution-logo-black-on-white-background.png" />
+    <Resource Include="Images\winetranet-low-resolution-logo-white-on-transparent-background.png" />
+    <Resource Include="Images\winetranet-website-favicon-color.png" />
+    <Resource Include="Images\winetranet-website-favicon-white.png" />
+  </ItemGroup>
+
 </Project>
